@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamal Rajput Ray | Full Stack Laravel Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Kamal<span>.Dev</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="badge">🚀 1.5+ Years Experience</div>
+            <h1>Kamal Rajput Ray</h1>
+            <h2 class="typing-text">Full Stack Developer | Laravel</h2>
+            <p>Building scalable financial systems and automating workflows. <br>Specialized in Laravel, AWS, and
+                Digital Lending solutions. <br><span style="color: var(--secondary); font-size: 0.9em;">(Currently
+                    Upskilling in Python Automation)</span></p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-block">
+                <div class="code-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span style="margin-left: auto; color: #64748b; font-size: 0.8rem;">LoanController.php</span>
+                </div>
+                <pre><code><span class="keyword">public function</span> <span class="function">approveLoan</span>(<span class="variable">$request</span>) {
+    <span class="variable">$user</span> = <span class="class">Auth</span>::<span class="function">user</span>();
+    
+    <span class="keyword">if</span> (!<span class="variable">$user</span>-><span class="function">isEligible</span>()) {
+        <span class="keyword">return</span> <span class="function">response</span>()-><span class="function">json</span>([
+            <span class="string">'status'</span> => <span class="string">'rejected'</span>
+        ], <span class="number">403</span>);
+    }
+
+    <span class="variable">$this</span>-><span class="property">service</span>-><span class="function">process</span>(<span class="variable">$user</span>);
+    <span class="keyword">return</span> <span class="string">'Loan Approved 🚀'</span>;
+}</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Professional Summary</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Motivated and passionate <strong>Laravel Developer</strong> with over <strong>1.5 years of
+                            experience</strong> in backend development, API integration, and database management. I
+                        specialize in building efficient, scalable web applications for the fintech sector.</p>
+                    <p>Currently, I am expanding my skillset by learning <strong>Python Automation</strong> to bridge
+                        the gap between development and operational efficiency.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle"></i> Backend & RESTful API Development</li>
+                        <li><i class="fas fa-check-circle"></i> Digital Lending & LOS Systems</li>
+                        <li><i class="fas fa-check-circle"></i> DevOps (AWS S3, EC2, MinIO)</li>
+                        <li><i class="fas fa-check-circle"></i> Frontend Integration (jQuery, AJAX)</li>
+                    </ul>
+                    <div style="margin-top: 2rem;">
+                        <a href="#" class="btn btn-primary">Download Resume <i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>1.5+</h3>
+                        <p>Years Exp.</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>4+</h3>
+                        <p>Major Projects</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>AWS</h3>
+                        <p>Cloud Integration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <!-- Job 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="timeline-content">
+                        <span class="date">April 2025 – Present</span>
+                        <h3>Backend Developer</h3>
+                        <h4>Multify Solutions Pvt. Ltd.</h4>
+                        <p>Developing backend workflows for Digital Lending and Loan Operating Systems (LOS).
+                            Implementing KYC verification with AJAX/jQuery and managing secure document storage using
+                            MinIO and AWS S3.</p>
+                    </div>
+                </div>
+                <!-- Job 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-building"></i></div>
+                    <div class="timeline-content">
+                        <span class="date">Nov 2024 – March 2025</span>
+                        <h3>Backend Developer</h3>
+                        <h4>Shri Ram Finance (Client Project)</h4>
+                        <p>Optimized backend modules for loan processing and eligibility checks. Integrated third-party
+                            APIs for borrower validation and enhanced UI interactions for field executives.</p>
+                    </div>
+                </div>
+                <!-- Job 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="timeline-content">
+                        <span class="date">July 2024 – Oct 2024</span>
+                        <h3>Backend Developer</h3>
+                        <h4>Bluechip Private Limited</h4>
+                        <p>Worked on a freelancing marketplace platform. Developed REST APIs, managed database
+                            operations, and built responsive UI components using Laravel and jQuery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Backend & Frameworks</h3>
+                    <div class="skill-items">
+                        <div class="skill-card"><i class="fab fa-laravel"></i> <span>Laravel</span></div>
+                        <div class="skill-card"><i class="fab fa-php"></i> <span>PHP</span></div>
+                        <div class="skill-card"><i class="fas fa-server"></i> <span>REST APIs</span></div>
+                        <div class="skill-card"><i class="fab fa-python"></i> <span>Python (Learning)</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Database & Cloud</h3>
+                    <div class="skill-items">
+                        <div class="skill-card"><i class="fas fa-database"></i> <span>MySQL / PostgreSQL</span></div>
+                        <div class="skill-card"><i class="fab fa-aws"></i> <span>AWS (S3, EC2)</span></div>
+                        <div class="skill-card"><i class="fas fa-cloud"></i> <span>MinIO</span></div>
+                        <div class="skill-card"><i class="fas fa-hdd"></i> <span>MSSQL</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frontend & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-card"><i class="fab fa-js"></i> <span>JavaScript / jQuery</span></div>
+                        <div class="skill-card"><i class="fab fa-bootstrap"></i> <span>Bootstrap</span></div>
+                        <div class="skill-card"><i class="fab fa-git-alt"></i> <span>Git / GitHub</span></div>
+                        <div class="skill-card"><i class="fas fa-paper-plane"></i> <span>Postman</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Key Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img gradient-1">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <div class="project-info">
+                        <h4>Digital Lending Platform</h4>
+                        <p>Real-time loan onboarding system. Integrated internal APIs for loan processing and MinIO for
+                            document storage.</p>
+                        <div class="tags">
+                            <span>Laravel</span><span>AWS</span><span>MinIO</span><span>AJAX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img gradient-2">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="project-info">
+                        <h4>Loan Operating System (LOS)</h4>
+                        <p>End-to-end loan management solution with live customer data integration and workflow
+                            automation.</p>
+                        <div class="tags">
+                            <span>Laravel</span><span>Live Data</span><span>Workflow</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img gradient-3">
+                        <i class="fab fa-cc-visa"></i>
+                    </div>
+                    <div class="project-info">
+                        <h4>Credit Card Portal</h4>
+                        <p>Application portal with KYC submission, Gmail auth integration, and OTP verification.</p>
+                        <div class="tags">
+                            <span>Laravel</span><span>Auth API</span><span>OTP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-img gradient-4">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <div class="project-info">
+                        <h4>Freelancing Platform</h4>
+                        <p>Full-stack marketplace connecting freelancers with clients, featuring job posting and bidding
+                            systems.</p>
+                        <div class="tags">
+                            <span>Laravel</span><span>Full Stack</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="python-learning"
+                style="margin-top: 60px; text-align: center; border: 1px dashed #4f46e5; padding: 30px; border-radius: 15px;">
+                <h3 style="margin-bottom: 20px; color: var(--text-main);">🧪 Currently Experimenting With Python
+                    Automation</h3>
+                <div class="projects-grid" style="justify-content: center;">
+                    <!-- Python Mini Project -->
+                    <div class="project-card" style="max-width: 350px; margin: auto;">
+                        <div class="project-info">
+                            <h4><i class="fab fa-python" style="color: #fbbf24;"></i> Auto Form Filler & Scraper</h4>
+                            <p style="font-size: 0.9rem;">Building bots to automate login and form submissions using
+                                Playwright.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-alt">
+        <div class="container contact-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Interested in working together? Let's connect via phone or email.</p>
+
+            <div class="contact-wrapper">
+                <!-- Left Column: Contact Info -->
+                <div class="contact-info-card">
+                    <h3>Contact Information</h3>
+                    <p>Open for opportunities. feel free to reach out!</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                            <div class="info">
+                                <span>Phone</span>
+                                <p>+91-9201698804</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                            <div class="info">
+                                <span>Email</span>
+                                <p>kamalrajput@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info">
+                                <span>Location</span>
+                                <p>Shankar Nagar, Chhattisgarh</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/kamal-rajput-ray-a3856425b" target="_blank"
+                            class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Ranch12k" target="_blank" class="social-btn github"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Message Form -->
+                <form class="contact-form" action="mailto:kamalrajput@gmail.com" method="post" enctype="text/plain">
+                    <h3>Send Message</h3>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="How can I help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message <i
+                            class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Kamal Rajput Ray. Laravel Developer.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
